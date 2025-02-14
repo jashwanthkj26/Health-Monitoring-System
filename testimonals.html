@@ -1,0 +1,145 @@
+<style>
+/* Testimonials Section */
+/* Testimonial Section */
+.testimonials {
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Testimonial Card */
+.testimonial {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 300px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.testimonial img {
+    border-radius: 50%; /* Circular client images */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #00796b; /* Add border for emphasis */
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Add transition effects */
+.testimonial-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Optional: Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+/* Optional: Add arrow buttons for slider functionality */
+.slider-button {
+    background-color: #00796b;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+}
+
+.slider-button:hover {
+    background-color: #004d40;
+}
+
+.slider-button-left {
+    left: 20px;
+}
+
+.slider-button-right {
+    right: 20px;
+}
+
+</style>
+<section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <img src="WTImages/testimonal1.jpg" alt="Client Testimonial 1">
+                <p>"The team is amazing! They took such good care of my mother."</p>
+                <span>- Emily W.</span>
+            </div>
+            <div class="testimonial">
+                <img src="WTImages/testimonal2.jpg" alt="Client Testimonial 2">
+                <p>"A wonderful experience with compassionate caregivers."</p>
+                <span>- John R.</span>
+            </div>
+            <div class="testimonial">
+                <img src="WTImages/testimonal3.jpg" alt="Client Testimonial 3">
+                <p>"I feel safe knowing that my father is in good hands."</p>
+                <span>- Sarah M.</span>
+            </div>
+            <div class="testimonial">
+                <img src="WTImages/testimonal4.jpg" alt="Client Testimonial 4">
+                <p>"Their commitment to quality care is outstanding. My grandmother enjoys her time and feels valued."</p>
+                <span>- Mark T.</span>
+            </div>
+            <div class="testimonial">
+                <img src="WTImages/testimonal5.jpg" alt="Client Testimonial 5">
+                <p>"Excellent service! The staff goes above and beyond to ensure the comfort and happiness of their clients."</p>
+                <span>- Linda G.</span>
+            </div>
+            <div class="testimonial">
+                <img src="WTImages/testimonal6.jpg" alt="Client Testimonial 6">
+                <p>"I can't thank you enough for the support you provided during my father's recovery. Highly recommend!"</p>
+                <span>- Daniel H.</span>
+            </div>
+        </div>
+    </section>
